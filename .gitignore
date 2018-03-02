@@ -1,0 +1,7 @@
+*.blg
+*.log
+*.bbl
+*.aux
+eps-converted-to.pdf
+*.png
+*.swp

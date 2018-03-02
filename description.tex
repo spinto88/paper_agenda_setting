@@ -1,0 +1,18 @@
+
+\section{Description of the work}
+\label{sec:description}
+
+\par We analyzed a corpus of news' articles that were published between July 31th and November 5th in the section \emph{Politics} of the electronic editions of the Argentinian newspapers \emph{Clarín}, \emph{La Nación}, \emph{Página12}, and the news portal \emph{Infobae}.
+The first two lead the sale of printed editions in \emph{Buenos Aires} city, but \emph{Clarín} reaches roughly two times the readers of \emph{La Nación}, and ten times the readers of \emph{Página 12} \footnote{www.ivc.org.ar}. On the other hand, \emph{Infobae} has the website with more visitors, above the websites of \emph{Clarín} and \emph{La Nación} \footnote{https://www.alexa.com/topsites/countries/AR}.
+
+\par The corpus analyzed is constituted by 2908 politics articles of \emph{Clarín}, 3565 of \emph{La Nación}, 3324 of \emph{Página 12}, and 2018 of \emph{Infobae}. Except \emph{Página 12}, all articles were taken from the section \emph{Política} of the respective news portal, while the articles which belong to \emph{Página 12} were taken from the section \emph{El país}.
+
+\par The analysis made basically consist of topic detection over the corpus' articles in order to describe it a set of topics which evolve over time. Topic detection is a powerful computational technique that allows us to analyze a big amount of texts that can be impossible otherwise \cite{griffiths2004finding}. For a careful description of the methodology implemented please see section \ref{sec:Methodology}. 
+This methodology not only gives us the evolution over time of the topics, but also a set of keywords that allow us to interpret and understand what the topics are talking about. 
+We take advantage of this keywords in order to make queries to the \emph{Google Trends} tool and have an insight of what the public interests are. 
+\par After all this proceedings, which we are going to give more details during the description and discussion of the work, we obtain two objects of study which we call the \textbf{Media Agenda (MA)} and the \textbf{Public Agenda (PA)}. 
+The first one is the set of topics detected in the corpus, and the second one belongs to do the respective Google Trends queries. 
+Both are normalized so the Agendas are described as a time dependent distribution over the topic's space, where the time scale is day by day.
+Therefore the Agendas give us the relative importance of a given topic respect the other (i.e. it does not give us absolute values such as the number of titles associated).
+
+
