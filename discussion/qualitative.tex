@@ -9,13 +9,11 @@ After the proceedings describe in section \ref{sec:Methodology}, we construct th
 \par In figure \ref{fig:all_agenda} we show a bump chart of the \textbf{MA} and \textbf{PA}. A bump chart is a very useful visualization tool for displaying the relative weight of the topics and at the same time their ranking, putting on the top the most important topic at a particular date.
 
 % Global Agenda figure!!!
-\begin{landscape}
-\begin{figure*}[h]
-\includegraphics[height = \textheight]{images/Fig1.pdf}
+\begin{figure}[h]
+\includegraphics[width = \textwidth]{images/Fig1.pdf}
 \caption{\textbf{Bump graph of the Media Agenda (MA) and Public Agenda (PA).} Topics’ names are introduced and some important events are pointed out. The curves’ width and their ordering are related to the topics’ relative weight.}
 \label{fig:all_agenda}
-\end{figure*}
-\end{landscape}
+\end{figure}
  
 The topics' names are introduced in the figure, where we also point out some important events related to them.
 \par In figure \ref{fig:topics_wordclouds}, we show the wordclouds of the keywords that define each topic, where the size of the word belongs to the importance in the topic's definition given by the topic detection algorithm. In green color, we point out the words involved in the Google Trends queries in order to construct the Public Agenda. The queries employed in Google Trends are specifically shown in table \ref{table:gt_all_correlation} together with the linear correlation between the topics' temporal profiles that form the Public Agenda and their counterparts in the Media Agenda.
@@ -40,3 +38,11 @@ The wordclouds show the most important keywords involved in the definition of ea
 We expected that the Media's and public's interest should generally follow a similar a pattern due to the external events, although the periods where those differ are of particular interest for us. 
 A non positive (or a non significant) correlation may imply that we are not properly detecting the keywords or features that describe a particular topic, so the Google Trends' pattern would not be able to reflect a similar behavior that its counterpart in the Media.
 
+% Temporal_profiles
+\begin{figure}[h]
+\centering
+\includegraphics[width = \textwidth]{images/Fig2_5.pdf}
+\caption{\textbf{AUXILIAR IMAGE: Temporal profiles.}
+Elections (left) and Missing Person (right).
+}
+\end{figure}
