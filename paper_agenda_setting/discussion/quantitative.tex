@@ -1,0 +1,47 @@
+\subsection{A quantitative approach}
+
+\subsubsection{Agenda diversity}
+
+% Agenda diversity
+
+\par In order to quantify the similarities and differences between the Media Agenda and the Public Agenda, we start by asking how is the distribution of each agenda among the topic's space. In particular, we measure how diverse is each agenda. Following \cite{boydstun2014importance}, we calculate the normalized Shannon's entropy ($H$, see eq.\ref{eq:shannon_entropy}) in order to measure the diversity of the \textbf{MA} and \textbf{PA}.
+\par In figure \ref{fig:shannon_entropy_agendas} we can see the value of $H$ as a function of time. We can see that there are periods where the diversity is lower than the usual, more notorious in the Public Agenda giving by \textbf{Gt}. 
+We are going to pay attention to four dates in the Public Agenda, which three detected as outliers of the typical behavior, two from \textbf{Gt} and one from \textbf{Tw}. 
+\par A small value in the diversity is due to the fact that the most important topic attracts practically all the attention of the public or the media.
+In the radar plots included also in figure \ref{fig:shannon_entropy_agendas} we can see that two of the points (\textbf{a} and \textbf{d}) belong to the topic \emph{Elections} and coincide with the primary and general legislative elections that took place in August 13th and October 22th. 
+In all the agendas these points where detected as outliers except point (d) in Twitter Agenda: By inspecting the radar plot the diversity in this agenda can be the result of the association between the topic \emph{Elections} and the \emph{Current President}.
+Discussions in Twitter about elections appear also in point (c), when the other agendas seems to be more diverse. 
+On the other hand, we inspect the point (b) despite not being detected as a outlier, which belong to the topic \emph{Missing person} and related to a month after the disappearance of Santiago Maldonado (see section \ref{sec:Context}). 
+We emphasize the discussion about this topic because we see interesting facts that appear along the analysis.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = \textwidth]{images/Fig3.pdf}
+\caption{\textbf{Shannon entropy (H) as a measure of agenda diversity.} The Public Agenda show a less diverse behavior than the Media Agenda as can be seen in the left figure. The horizontal lines are the lower inner fences of each signal in order to identify outliers. The related radar plots shows that those dates when the agenda has a low diversity, the most important topic catches the most public’s attention}
+\label{fig:shannon_entropy_agendas}
+\end{figure}
+
+\par From the measure of $H$ we can also see that the median of the Public Agenda diversity is statistical significant lower than the Media Agenda's one.
+Specifically $H_{Gt} = 0.73$ and $H_{Tw} = 0.74$ are statistical significant lower than $H_{MA} = 0.85$ with $p < 10^{-18}$, while there is no significant difference between the first two. 
+However from figure \ref{fig:shannon_entropy_agendas} we can see that \textbf{Gt} shows more abrupt falls in the diversity in response to specific events.
+We conclude that its an important fact about audience behavior: given a finite set of topics, \textbf{the Public Agenda is less diverse than the Media Agenda}, because the public seems to focus more in the most important topic than the Media can do, maybe due to editorial decisions.
+
+\subsubsection{Public Agenda's distance}
+
+% Jensen-Shannon distance between PA and MA
+
+\par The measurement of the Shannon's entropy made above is an independent property of each distribution. 
+Here we directly compare the Agendas by computing the Jensen-Shannon distance. We again identify outliers and aim to interpret them.
+In figure \ref{fig:jensen_shannon_gt} we show the Jensen-Shannon distance as a function of time. We inspect three points that seems to be of particular interest. In all cases, the radar plots shows that a greater distance is associated with a more interest of public in the topic \emph{Missing person}. 
+\par Points \textbf{(c)} and \textbf{(d)} shows that both the public and the Media are interest in that topic, but the Media have to cover other topics, so the distance value can be seen as a derivation of the diversity effect discussed in the last section.
+However points \textbf{(a)} (we take this point due to be a extreme of the distance in the middle of the period despite not being an outlier) and \textbf{(b)} seem to show an interest of the public in the topic \emph{Missing person} which it is not reflected in the Media. 
+In figure \ref{fig:all_agenda} we can see that this topic reached the first place in public's interest in both \textbf{Gt} and \textbf{Tw} before that in the Media. We associate this fact with a campaign made in social media like Facebook and Twitter in August 26th, that paid for the appearance of Santiago Maldonado and had a great repercussion, maybe at first underestimated by the Media (see section \ref{sec:Context}). 
+\par It is important to recall that it is our interpretation based on the knowledge of the context, and that we are not studying causality (we will say a few words about it in section \ref{sec:who_sets}), i.e. we can't say, for instance, that in this case the Public Agenda set the Media Agenda. 
+However, the Jensen-Shannon distance, in conjunction with the measurement of the agenda diversity given by the Shannon entropy, give an insight of independent behavior of the Public and the Media, and its identification can be a starting point to study the Media reaction to a change in audience's interests.
+ 
+\begin{figure}[h]
+\includegraphics[width = \textwidth]{images/Fig4.pdf}
+\caption{\textbf{Jensen Shannon distance between the Media Agenda and the Public Agenda as a function of time} (with upper inner fences pointed out). The larger distances are due to a greater interest of the audience in the topic \emph{Missing person} which leads to lesser interest in the other topics, which the Media has to cover, maybe except in points (a) and (b) where the Media seems not to anticipate the public interest in the mentioned topic.}
+\label{fig:jensen_shannon_gt}
+\end{figure}
+
