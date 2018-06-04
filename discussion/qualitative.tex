@@ -8,18 +8,33 @@ After the proceedings describe in section \ref{sec:Methodology}, we construct th
 
 \subsection{Media and Public agenda: a qualitative approach}
 
-\par In figure \ref{fig:all_agenda} we show a bump chart of the \textbf{MA} and the \textbf{PA} discriminated by \textbf{GT} and \textbf{Tw}. 
-A bump chart is a very useful visualization tool for displaying the relative weight of the topics and at the same time their ranking, putting on the top the most important topic at a particular date.
+\par In figure \ref{fig:topics_wordclouds} we show the radar plots of the average distributions of the \textbf{MA} and the \textbf{PA} discriminated by \textbf{GT} and \textbf{Tw} together with the introduction of the topics' names.
+A radar plot is an alternative of histograms that allows the visual comparison of distributions easier.
+In this figure we also show the wordclouds of the keywords that define each topic, where the size of the word belongs to the importance in the topic's definition given by the topic detection algorithm. In green color, we point out the words involved in the Google Trends and Twitter queries in order to construct the Public Agenda. The queries employed are also specified in table \ref{table:gt_all_correlation} together with the linear correlation between the topics' temporal profiles that form the Public Agenda and their counterparts in the Media Agenda.
+
+\par On the other hand, in figure \ref{fig:all_agenda} we show a bump chart of the Agendas, which is the dynamical representation of the Agendas of figure \ref{fig:topics_wordclouds}. 
+A bump chart provides us a very useful visualization tool for displaying the relative weight of the topics and at the same time their ranking, putting on the top the most important topic at a particular date.
+In figure \ref{fig:all_agenda} we also point out some important events related to the topics.
+
+% Wordclouds
+\begin{figure}[h]
+\centering
+\includegraphics[width = \textwidth]{images/Fig1.pdf}
+\caption{\textbf{Radar plots of the Media and Public Agenda average distributions and topics' wordclouds.} The Public Agenda is represented either by Google Trends (Gt) and Twitter (Tw). 
+Topics’ names are introduced together with the wordclouds containing the most important keywords involved in the definition of each topic.
+In green color we show those included in the Google Trends and Twitter queries (see table \ref{table:gt_all_correlation}) and therefore in our construction of the Public Agenda.
+}
+\label{fig:topics_wordclouds}
+\end{figure}
+
 
 % Global Agenda figure!!!
 \begin{figure}[h]
-\includegraphics[width = \textwidth]{images/Fig1.pdf}
-\caption{\textbf{Bump graph of the Media Agenda (MA) and Public Agenda extracted from Google Trends (Gt) and Twitter (Tw)} Topics’ names are introduced and some important events are pointed out. The curves’ width and their ordering are related to the topics’ relative weight.}
+\includegraphics[width = \textwidth]{images/Fig2.pdf}
+\caption{\textbf{Bump graph of the Media Agenda (MA) and Public Agenda extracted from Google Trends (Gt) and Twitter (Tw).} Some important events related to the topics are pointed out. The curves’ width and their ordering are related to the topics’ relative weight.}
 \label{fig:all_agenda}
 \end{figure}
  
-The topics' names are introduced in the figure, where we also point out some important events related to them.
-\par In figure \ref{fig:topics_wordclouds}, we show the wordclouds of the keywords that define each topic, where the size of the word belongs to the importance in the topic's definition given by the topic detection algorithm. In green color, we point out the words involved in the Google Trends and Twitter queries in order to construct the Public Agenda. The queries employed are also specified in table \ref{table:gt_all_correlation} together with the linear correlation between the topics' temporal profiles that form the Public Agenda and their counterparts in the Media Agenda.
 
 \footnote{Due to different characteristics in the search tool of Twitter, we adapted the queries employed here but preserving the at least at we can the most important keywords. The queries employed by topic were: \\
 Elections: elecciones + cambiemos + kirchner + massa + randazzo \\
@@ -31,19 +46,6 @@ Prosecutor’s death: nisman + amia + memorandum + timerman +  bonadio \\
 Former Vice-President:  boudou + ciccone +  lijo + vandenbroele + carmona
 }
 
-\par In figure \ref{fig:topics_wordclouds}, we also show the radar plots of the distributions made up by averaging over time the Agendas of figure \ref{fig:all_agenda}, as a way to reduce that information which would help in farther discussions. We use radar plots as an alternative of histograms because its facility in distributions comparison.  
-
-% Wordclouds
-\begin{figure}[h]
-\centering
-\includegraphics[width = \textwidth]{images/Fig2.pdf}
-\caption{\textbf{Wordclouds and radar plot of Media and Public Agenda as an average distribution.}
-In the last one, it can be seen, for instance, a greater interest of the audience in the topic Missing person than the Media. 
-The wordclouds show the most important keywords involved in the definition of each topic, where in green color we show those included in the Google Trends and Twitter queries (see table \ref{table:gt_all_correlation}) and therefore in our construction of the Public Agenda.
-}
-\label{fig:topics_wordclouds}
-\end{figure}
-
 % Table with queries and correlations
 \input{discussion/table_gt_queries_correlation}
 
@@ -54,11 +56,3 @@ Also we can observe a great similarity between \textbf{Gt} and \textbf{Tw} agend
 We expected that the Media's and public's interest should generally follow a similar a pattern due to the external events, although the periods where those differ are of particular interest for us. 
 A non positive (or a non significant) correlation may imply that we are not properly detecting the keywords or features that describe a particular topic, so the Google Trends' or Twitter's pattern would not be able to reflect a similar behavior that its counterpart in the Media.
 
-% Temporal_profiles
-\begin{figure}[h]
-\centering
-\includegraphics[width = \textwidth]{images/Fig2_5.pdf}
-\caption{\textbf{AUXILIAR IMAGE: Temporal profiles.}
-Elections (left) and Missing Person (right).
-}
-\end{figure}
