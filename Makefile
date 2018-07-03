@@ -1,8 +1,8 @@
 all:
-	pdflatex paper.tex
-	bibtex paper.aux
-	pdflatex paper.tex
-	pdflatex paper.tex
-	rm -rfv paper.aux paper.bbl paper.log paper.blg
+	pdflatex bmc_article.tex
+	bibtex bmc_article.aux
+	pdflatex bmc_article.tex
+	pdflatex bmc_article.tex
+	rm -rfv bmc_article.aux bmc_article.bbl bmc_article.log bmc_article.blg
 clean:
-	rm -rfv paper.aux paper.bbl paper.log paper.blg images/*eps-converted-to.pdf
+	rm -rfv bmc_article.aux bmc_article.bbl bmc_article.log bmc_article.blg images/*eps-converted-to.pdf
